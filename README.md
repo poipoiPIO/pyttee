@@ -40,7 +40,7 @@ In the HTML language tags could also have attributes. Tag attributes in our DSL 
 > ["i", {"style": "color:red"}, "Owo!"] -> `"<i color="red">Owo!</i>"`
 
 For all of these, tags can represent arbitrary nesting of the tags, to reach that we could use list nesting, for example:
-> ["i", ["b", ["tt", "meow"]]] -> `"<i><b><tt></tt></b></i>"`
+> ["i", ["b", ["tt", "meow"]]] -> `"<i><b><tt>meow</tt></b></i>"`
 
 ### Builders:
 The builder is the entity that provides the interface of template building. Every builder of the library is inherited from the class Builder declares some abstract methods that every template should implement and provides a core compiler for Builders.
