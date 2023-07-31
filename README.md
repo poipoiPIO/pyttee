@@ -8,12 +8,12 @@ Pyttee: Lispy DSL library for python html templates
 ```python
 import pyttee
 
-def my_first_template(name: str) -> str:
-	template = ["h1", {"style": "color:blue"}, name]
-	builder = pyttee.TemplateStrBuilder()
-	return builder(template)
+def my_first_template(name: str):
+	return ["h1", {"style": "color:blue"}, name]
 
-html = my_first_template("Yummy name")
+template = my_first_template("Yummy name")
+builder = pyttee.TemplateStrBuilder()
+html = builder(template)
 print(html)
 ```
 
