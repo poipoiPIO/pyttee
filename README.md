@@ -37,7 +37,7 @@ Basically, the template is the list of tags in sexp form. To create a simple tem
 > ["h1", "Hello world!"] -> `"<h1>Hello world</h1>"`
 
 In the HTML language tags could also have attributes. Tag attributes in our DSL are represented as the dictionary, where the key is the name of an attribute and the value is the value itself, for example:
-> ["i", {"style": "color:red"}, "Owo!"] -> `"<i color="red">Owo!</i>"`
+> ["i", {"style": "color:red"}, "Owo!"] -> `"<i style="color:red">Owo!</i>"`
 
 For all of these, tags can represent arbitrary nesting of the tags, to reach that we could use list nesting, for example:
 > ["i", ["b", ["tt", "meow"]]] -> `"<i><b><tt>meow</tt></b></i>"`
